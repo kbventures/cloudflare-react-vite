@@ -16,7 +16,7 @@ function App() {
   const [todo, setTodo] = useState<string>("");
   const [todos, setTodos] = useState<Todo[]>([]);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-  const url = "http://localhost:8787/todo";
+  const url = "https://cloudflare-hono-d1.beaudin-ken-mathieu.workers.dev/todo";
 
   useEffect(() => {
     const fetchData = async () => {
